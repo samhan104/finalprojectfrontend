@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+#root, html {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position:relative;
+  /* left: 20; */
+  background-color: #252525;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+a{
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+a:hover{
+  cursor: pointer;
+}
+/* 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                                                               NAV BAR
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+.nav{
+  background-color: #1b1b1b;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.nav-bar-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#nav-bar-links{
+  display: inline;
+  text-decoration: none;
 }
+
+#nav-link {
+  text-decoration: none;
+  color: white;
+}
+
+#nav-link:hover{
+  cursor: pointer;
+}
+
+/* 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                                                               HOME
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+.intro-box{
+  display: flex;
+  box-sizing: content-box;
+  background-color: rgba(197, 212, 222, 0.7);
+  height: 70vh;
+  width: 70vw;
+  margin: auto;
+  margin-top: 15vh;
+  border-radius: 25px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  font-size: 2em;
+  font-weight: 400;
+  position: relative;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.i-am{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.title-name {
+  margin: 0;
+  margin-top: 1em;
+  padding: 0;
+  color: white;
+  text-align: center;
+}
+
+.resumebutton{
+  height: 20vh;
+  width: 30vw;
+  border-radius: 25px;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(225,237,245);
+}
+
+.resumebutton:hover{
+cursor: pointer;
+}
+
+.resumelink {
+  padding-bottom: 2em;
+}
+
+
